@@ -7,3 +7,5 @@ const App = (props) => {
 }
 
 const Circle = null;  // CHALLENGE: Write a separate Circle component for use in the App component
+
+ReactDOM.render(, document.getElementById('circlesContainer'))
