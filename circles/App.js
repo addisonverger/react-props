@@ -14,7 +14,7 @@ const Circle = (props) => {
   return (
     props.circOutput.circles.map((e, index) => {
       return (
-        <div key= {index} style={{width: e.radius * 2, height: e.radius * 2, borderRadius: e.radius, backgroundColor: e.color}}></div>
+        <div key={index} style={{width: e.radius * 2, height: e.radius * 2, borderRadius: e.radius, backgroundColor: e.color}}></div>
       )
     })
   )
