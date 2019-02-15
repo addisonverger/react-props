@@ -40,18 +40,15 @@ const initialState = [
 
 const reducer = (state = initialState, action) => {
     // Handle actions here - make sure you don't mutate the state!
-    const { type } = action;
+      const { type, method } = action;
 
-    const reducer = (state = initialState, action) => {
-        // Handle actions here - make sure you don't mutate the state!
-        const { type, method } = action;
+      if (type == 'SORT') {
+          return [...state].sort((a, b) => {
+            console.log('b: ', b[method], method)
+            console.log('a: ', a[method], method)
+            return b[method] - a[method]
+          });
+      }
 
-        if (type == 'SORT') {
-            return [...state].sort((a, b) => b[method] - a[method]);
-        }
-
-        return state;
-    }
-    
     return state;
 }
