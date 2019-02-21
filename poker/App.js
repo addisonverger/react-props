@@ -13,9 +13,9 @@ const App = (props) => {
 const Card = (props) => {
   console.log(props.cardInfoArray)
   return (
-    props.cardInfoArray.cards.map((e, index) => {
+    props.cardInfoArray.cards.map((card, index) => {
       return (
-        <img key={index} width="80" src={"cards/" + e.value + e.suit + ".png"}/>
+        <img key={index} width="80" src={"cards/" + card.value + card.suit + ".png"}/>
       )
     })
   )
